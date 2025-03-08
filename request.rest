@@ -39,11 +39,26 @@ Content-Type: application/json
 
 {
     "roomId": "67cbe643f583d7a60a9c7d6b",
-    "name": "lindley q",
-    "email": "lmquiabao03@gmail.com",
-    "checkinDate": "1994-07-02",
-    "checkoutDate": "1994-07-03",
+    "name": "Markus Collins",
+    "email": "markusc@gmail.com",
+    "checkinDate": "1994-12-24",
+    "checkoutDate": "1994-12-24",
+    "confirmed": true
 }
+
+###
+PUT http://localhost:5001/api/bookings/67cbf2e126229c082ee6c291
+Content-Type: application/json
+
+{
+    "name":"Lindley Quiambao"
+}
+
+###
+DELETE http://localhost:5001/api/bookings/67cbf60551970cca5c4b3805
+
+###
+GET http://localhost:5001/api/bookings/67cbf2e126229c082ee6c291
 
 
 
