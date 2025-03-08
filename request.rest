@@ -1,0 +1,49 @@
+###
+GET http://localhost:5001/api/rooms
+
+###
+POST http://localhost:5001/api/rooms
+Content-Type: application/json
+
+{
+    "name":"Hotel Standard Room",
+    "price": 3500,
+    "desc": "Basic Room",
+    "roomNumber": [{
+        "number": 203,
+        "unavailableDates": ["2024-07-02","2024-07-01"]
+    }]
+}
+
+###
+GET http://localhost:5001/api/rooms/67cbc7014df9c023d9096b54
+
+### 
+PUT http://localhost:5001/api/rooms/67cbc7014df9c023d9096b54
+Content-Type: application/json
+
+{
+    "name": "updatedName"
+
+}
+
+###
+DELETE http://localhost:5001/api/rooms/67cbc7014df9c023d9096b54
+
+###
+GET http://localhost:5001/api/bookings
+
+###
+POST http://localhost:5001/api/bookings
+Content-Type: application/json
+
+{
+    "roomId": "67cbe643f583d7a60a9c7d6b",
+    "name": "lindley q",
+    "email": "lmquiabao03@gmail.com",
+    "checkinDate": "1994-07-02",
+    "checkoutDate": "1994-07-03",
+}
+
+
+
